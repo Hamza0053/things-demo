@@ -3,12 +3,13 @@ import MenuBar from "./MenuBar";
 
 // Set these to your image's actual pixel dimensions!
 // const IMAGE_URL = "https://i.postimg.cc/fLfTSsBf/update-map.png";
-const IMAGE_URL = '/new.png'
-const IMAGE_WIDTH = 2400;
-const IMAGE_HEIGHT = 1600;
+// const IMAGE_URL = "https://i.postimg.cc/fLfTSsBf/update-map.png";
+const IMAGE_URL = 'https://i.postimg.cc/jqBC1bV4/new.png'
+const IMAGE_WIDTH = 3000;
+const IMAGE_HEIGHT = 2000;
 
 const LargeImageScroller: React.FC = () => {
-  const [offset, setOffset] = useState({ x: -140, y: -750 });
+  const [offset, setOffset] = useState({ x: -500, y: -750 });
   const [dragging, setDragging] = useState(false);
   const [start, setStart] = useState<{ x: number; y: number } | null>(null);
 
