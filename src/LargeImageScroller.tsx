@@ -24,7 +24,11 @@ const getResponsiveDimensions = () => {
 };
 
 const LargeImageScroller: React.FC = () => {
-  const [offset, setOffset] = useState({ x: -500, y: -750 });
+  // Detect mobile device
+  const isMobile = window.innerWidth <= 768;
+  const [offset, setOffset] = useState(
+    isMobile ? { x: -1100, y: -300 } : { x: -500, y: -750 }
+  );
   const [dragging, setDragging] = useState(false);
   const [start, setStart] = useState<{ x: number; y: number } | null>(null);
   const [scale, setScale] = useState(1);
