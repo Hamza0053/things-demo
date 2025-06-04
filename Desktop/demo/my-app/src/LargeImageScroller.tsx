@@ -10,7 +10,6 @@ const LargeImageScroller: React.FC = () => {
   const [offset, setOffset] = useState({ x: -140, y: -750 });
   const [dragging, setDragging] = useState(false);
   const [start, setStart] = useState<{ x: number; y: number } | null>(null);
-  const scale = 0.8; // Fixed scale, no zoom
 
   // Helper to clamp offset so the image can't be dragged out of view
   const clampOffset = (x: number, y: number) => {
@@ -57,7 +56,6 @@ const LargeImageScroller: React.FC = () => {
 
   return (
     <>
-      
       <div
         style={{
           width: "100vw",
@@ -80,8 +78,8 @@ const LargeImageScroller: React.FC = () => {
             position: "absolute",
             left: offset.x,
             top: offset.y,
-            width: IMAGE_WIDTH ,
-            height: IMAGE_HEIGHT ,
+            width: IMAGE_WIDTH,
+            height: IMAGE_HEIGHT,
             userSelect: "none",
             pointerEvents: "none",
             backgroundColor: "#4c61b7",
