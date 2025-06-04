@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import MenuBar from "./MenuBar";
 
 // Set these to your image's actual pixel dimensions!
-const IMAGE_URL = "https://i.postimg.cc/fLfTSsBf/update-map.png";
+// const IMAGE_URL = "https://i.postimg.cc/fLfTSsBf/update-map.png";
+const IMAGE_URL = '/new.png'
 const IMAGE_WIDTH = 2400;
 const IMAGE_HEIGHT = 1600;
 
