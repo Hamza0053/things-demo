@@ -4,7 +4,7 @@ import MenuBar from "./MenuBar";
 // Set these to your image's actual pixel dimensions!
 // const IMAGE_URL = "https://i.postimg.cc/fLfTSsBf/update-map.png";
 // const IMAGE_URL = "https://i.postimg.cc/fLfTSsBf/update-map.png";
-const IMAGE_URL = 'https://i.postimg.cc/jqBC1bV4/new.png'
+const IMAGE_URL = '/newgridthing.png'
 const IMAGE_WIDTH = 3000;
 const IMAGE_HEIGHT = 2000;
 
